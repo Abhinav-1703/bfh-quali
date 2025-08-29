@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/bfhdb;DB_CLOSE_DELAY=-1;AUTO_RECONNECT=TRUE
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+bfh:
+  name: "John Doe"
+  regNo: "REG12347"
+  email: "john@example.com"
+
+bfh-endpoints:
+  generate: "https://bfhldevapigw.healthrx.co.in/hiring/generateWebhook/JAVA"
+  fallbackSubmit: "https://bfhldevapigw.healthrx.co.in/hiring/testWebhook/JAVA"
